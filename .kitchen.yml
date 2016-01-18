@@ -1,0 +1,24 @@
+driver:
+ name: vagrant
+ #http_proxy: http://iss-americas-pitc-alpharettaZ.proxy.corporate.ge.com:80
+ #https_proxy: http://iss-americas-pitc-alpharettaz.proxy.corporate.ge.com:80
+
+ provisioner:
+#  name: chef_solo
+#  require_chef_omnibus: true
+
+platforms:
+ - name: centos-6.0
+   driver:
+     box: centos-59
+     box_url: file:///Users/501759691/VirtualBox VMs/CentOS-6.6-x86_64-v20150426.box
+     network:
+       - ["forwarded_port", {guest: 80, host: 8000}]
+       - ["forwarded_port", {guest: 8080, host: 7000}]
+
+suites:
+ - name: default
+   run_list:
+     - recipe[sibutest::default]
+
+   attributes:

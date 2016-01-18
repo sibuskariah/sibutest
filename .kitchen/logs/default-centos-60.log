@@ -1,0 +1,36 @@
+I, [2016-01-17T22:15:22.781073 #1772]  INFO -- default-centos-60: -----> Converging <default-centos-60>...
+I, [2016-01-17T22:15:22.783074 #1772]  INFO -- default-centos-60: Preparing files for transfer
+I, [2016-01-17T22:15:22.783074 #1772]  INFO -- default-centos-60: Preparing dna.json
+I, [2016-01-17T22:15:22.784574 #1772]  INFO -- default-centos-60: Resolving cookbook dependencies with Berkshelf 3.3.0...
+I, [2016-01-17T22:15:23.972225 #1772]  INFO -- default-centos-60: Removing non-cookbook files before transfer
+I, [2016-01-17T22:15:24.041733 #1772]  INFO -- default-centos-60: Preparing solo.rb
+I, [2016-01-17T22:15:24.154748 #1772]  INFO -- default-centos-60: -----> Chef Omnibus installation detected (install only if missing)
+I, [2016-01-17T22:15:24.207254 #1772]  INFO -- default-centos-60: Transferring files to <default-centos-60>
+I, [2016-01-17T22:15:29.645445 #1772]  INFO -- default-centos-60: Starting Chef Client, version 12.2.1
+I, [2016-01-17T22:15:30.596566 #1772]  INFO -- default-centos-60: Compiling Cookbooks...
+I, [2016-01-17T22:15:30.640571 #1772]  INFO -- default-centos-60: Converging 7 resources
+I, [2016-01-17T22:15:30.640571 #1772]  INFO -- default-centos-60: Recipe: sibutest::apache
+I, [2016-01-17T22:15:31.693205 #1772]  INFO -- default-centos-60:  (up to date)
+I, [2016-01-17T22:15:31.693705 #1772]  INFO -- default-centos-60:  (up to date)
+I, [2016-01-17T22:15:31.703706 #1772]  INFO -- default-centos-60:   * directory[/var/www] action create (up to date)
+I, [2016-01-17T22:15:31.704206 #1772]  INFO -- default-centos-60:  (up to date)
+I, [2016-01-17T22:15:31.704206 #1772]  INFO -- default-centos-60:  (up to date)
+I, [2016-01-17T22:15:31.704206 #1772]  INFO -- default-centos-60:   * template[/etc/httpd/conf.d/sibu.conf] action create
+I, [2016-01-17T22:15:31.704706 #1772]  INFO -- default-centos-60:     - update content in file /etc/httpd/conf.d/sibu.conf from 55d405 to 01a9c1
+I, [2016-01-17T22:15:31.704706 #1772]  INFO -- default-centos-60:     --- /etc/httpd/conf.d/sibu.conf	2016-01-18 03:09:07.248039795 +0000
+I, [2016-01-17T22:15:31.704706 #1772]  INFO -- default-centos-60:     +++ /tmp/chef-rendered-template20160118-5030-t1chfr	2016-01-18 03:15:31.699039684 +0000
+I, [2016-01-17T22:15:31.704706 #1772]  INFO -- default-centos-60:     @@ -14,7 +14,7 @@
+I, [2016-01-17T22:15:31.704706 #1772]  INFO -- default-centos-60:      <VirtualHost *:80>
+I, [2016-01-17T22:15:31.704706 #1772]  INFO -- default-centos-60:      #    ServerAdmin webmaster@dummy-host.example.com
+I, [2016-01-17T22:15:31.704706 #1772]  INFO -- default-centos-60:   DocumentRoot /var/www/apache/
+I, [2016-01-17T22:15:31.704706 #1772]  INFO -- default-centos-60:     -    ServerName dev.test.com
+I, [2016-01-17T22:15:31.705206 #1772]  INFO -- default-centos-60:     +    ServerName sarath.com
+I, [2016-01-17T22:15:31.705206 #1772]  INFO -- default-centos-60:    ErrorLog /var/log/error.log
+I, [2016-01-17T22:15:31.705206 #1772]  INFO -- default-centos-60:      #    CustomLog /var/log/acess.log common
+I, [2016-01-17T22:15:31.735210 #1772]  INFO -- default-centos-60: 
+I, [2016-01-17T22:15:31.735710 #1772]  INFO -- default-centos-60:  (up to date)
+I, [2016-01-17T22:15:31.735710 #1772]  INFO -- default-centos-60: 
+I, [2016-01-17T22:15:31.735710 #1772]  INFO -- default-centos-60: Running handlers:
+I, [2016-01-17T22:15:31.735710 #1772]  INFO -- default-centos-60: Running handlers complete
+I, [2016-01-17T22:15:31.735710 #1772]  INFO -- default-centos-60: Chef Client finished, 1/7 resources updated in 2.093185853 seconds
+I, [2016-01-17T22:15:31.919734 #1772]  INFO -- default-centos-60: Finished converging <default-centos-60> (0m9.14s).
